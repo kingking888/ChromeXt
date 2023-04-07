@@ -11,6 +11,8 @@ We pay our main efforts to support the latest _stable_ version of Android Chrome
 installed from Google Play Store or downloaded APK from the internet.
 Please consider update your Android Chrome first before proceeding.
 
+Normally, [Bromite](https://github.com/bromite/bromite) is also supported.
+
 ## Usage
 
 Currently, this project requires **Xposed framework** installed.
@@ -76,9 +78,6 @@ On other areas, only the system gesture is available.
 
 ### Dev Tools for developers
 
-<!-- Currently, I implement this feature only for Android 11+. -->
-<!-- I might implement it for older Android versions if there are some requests for doing so. -->
-
 Tap five times on the Chrome version from the Chrome settings, you will see the `Developer options` menu.
 After restarting Chrome, ChromeXt offers you
 1. the `Developer tools` page menu for the UserScript manager front end,
@@ -133,9 +132,9 @@ Here are corresponding files you might want / need to change:
 - [x] Allow user to trigger reader mode
 - [x] Support @resource API
 - [x] Make GestureNav Fix optional
-- [ ] Support mocking User-Agent
-- [ ] Add an open source License
-- [ ] Support [urlFilter](https://developer.chrome.com/docs/extensions/reference/declarativeNetRequest/#type-RuleCondition) syntax
+- [x] Add an open source License
+- [ ] ~~Support mocking User-Agent~~
+- [ ] ~~Support [urlFilter](https://developer.chrome.com/docs/extensions/reference/declarativeNetRequest/#type-RuleCondition) syntax~~
 - [ ] Implement fully `GM_info`
 - [ ] Use [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/) as UserScript engine
 - [ ] Use `adb forward` to support non-root users
